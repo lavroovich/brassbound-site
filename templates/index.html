@@ -17,10 +17,14 @@
         </div>
     </header>
     <main>
-        <button onclick="window.location.href=https://discord.gg/3Jjry7nD" class="discord-button">
-            <img src="{{ url_for('static', filename='ds.png') }}" alt="Присоединяйся к Discord">
-        </button>
+        <div class="social-buttons">
+            <button type="button" onclick="window.location.href='https://discord.gg/3Jjry7nD'" class="discord-button">
+                <img src="{{ url_for('static', filename='ds.png') }}" alt="Присоединяйся к Discord">
+            </button>
+            <a href="https://t.me/brassboundnews" class="telegram-button" target="_blank" rel="noopener">
+                <img src="{{ url_for('static', filename='tg.png') }}" alt="Сообщество в Telegram">
+            </a>
+        </div>
     </main>
 </body>
 </html>
-
